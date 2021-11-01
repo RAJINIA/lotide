@@ -21,8 +21,8 @@ const eqArrays = function(arr1, arr2){
   }
 }
 
-const assertArrayEqual = function(arr1, arr2) {
-  console.log(arr1, arr2);
+const assertArraysEqual = function(arr1, arr2) {
+  //console.log(arr1, arr2);
   if(eqArrays(arr1, arr2) === true){
     console.log(`✅✅Assertion Passed: ${JSON.stringify(arr1)} = ${JSON.stringify(arr2)}`);
   } else {
@@ -70,9 +70,12 @@ const middle = function(arr) {
 // console.log(middle([1, 2, 3, 4]));
 // console.log(middle([1, 2, 3, 4, 5, 6]));
 
-assertArrayEqual(middle([1]), []);
-assertArrayEqual(middle([1, 2]), []);
-assertArrayEqual(middle([1, 2, 3]), [2]);
-assertArrayEqual(middle([1, 2, 3, 4, 5]), [3]);
-assertArrayEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArrayEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+//TEST CODE
+// assertArraysEqual(middle([1]), []);
+// assertArraysEqual(middle([1, 2]), []);
+// assertArraysEqual(middle([1, 2, 3]), [2]);
+// assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
+// assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
+// assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+
+module.exports = middle;
