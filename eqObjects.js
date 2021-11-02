@@ -28,21 +28,21 @@ const eqObjects = function(object1, object2) {
     //console.log('same length');
     for(const key1 in object1){  
       for(const key2 in object2) {
-        //console.log(`${key1} & data type: ${typeof(object1[key1])}`);
-        //console.log(`${key2} & data type: ${typeof(object2[key2])}`);
+        console.log(`${key1} & data type: ${typeof(object1[key1])}`);
+        console.log(`${key2} & data type: ${typeof(object2[key2])}`);
         if (key1 === key2){    
           if(typeof(object1[key1]) === 'object' && typeof(object2[key2]) === 'object') {
-            //eqArrays(object1[key1], object2[key2]);
-            //console.log(eqArrays(object1[key1], object2[key2]));
+            eqArrays(object1[key1], object2[key2]);
+            console.log(eqArrays(object1[key1], object2[key2]));
             if (eqArrays(object1[key1], object2[key2])) {
               result += 1;
-              //console.log(result);
+              console.log(result);
             }
 
           } else if(object1[key1] === object2[key2]){                  // checking if keys of object's are same
-            //console.log('values are equal');               // checking if values of keys of object's are same
+            console.log('values are equal');               // checking if values of keys of object's are same
             result += 1;
-            //console.log(result);
+            console.log(result);
           } //else {
             //console.log('values are different');
           //}        
@@ -69,12 +69,12 @@ const dc = { d: ["2", 3], c: "1" };
 //console.log(eqObjects(cd, dc)); // => true
 assertEqual(eqObjects(cd, dc), true)
 
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-assertEqual(eqObjects(ab, ba), true); // => true
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// assertEqual(eqObjects(ab, ba), true); // => true
 
-const abc = { a: "1", b: "2", c: "3" };
-assertEqual(eqObjects(ab, abc), false);
+// const abc = { a: "1", b: "2", c: "3" };
+// assertEqual(eqObjects(ab, abc), false);
 
 
 
