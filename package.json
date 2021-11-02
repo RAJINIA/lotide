@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@rajini.as/lotide",
+  "version": "1.0.2",
+  "description": "LOTIDE",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/RAJINIA/lotide.git"
   },
-  "author": "",
+  "author": "RAJINI",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RAJINIA/lotide/issues"
